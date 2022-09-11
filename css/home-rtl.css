@@ -1,7 +1,7 @@
 :root {
   --black-color: #413f40;
-  --grean-color: #0c9642;
-  --red-color: #bf1e2e;
+  --grean-color: #0d9642;
+  --red-color: #bf202f;
   --grey-color: #f5f5f5;
 }
 
@@ -47,23 +47,28 @@ body {
   }
 }
 .main-nav .content .left .content p {
+  font-weight: bold;
   color: var(--grean-color);
+  font-size: 14px;
 }
 @media (max-width: 767px) {
   .main-nav .content .left .content p {
     font-size: xx-small;
   }
 }
+.main-nav .content .right {
+  width: 15%;
+}
 @media (max-width: 767px) {
   .main-nav .content .right {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    width: inherit;
   }
 }
 
 .form-par {
-  background: url("../imges/logo.jfif") no-repeat bottom bottom cover;
   padding: 2rem;
   padding-right: 0px;
 }
@@ -95,8 +100,9 @@ body {
   }
 }
 .form-par .content .left {
-  width: 25%;
+  width: 30%;
   padding: 2.5rem;
+  background: url(../imges/logo.jfif) no-repeat bottom bottom cover;
   border-top-right-radius: 93px;
   background-color: var(--black-color);
   transform: translate(30px, -50px);
@@ -125,7 +131,9 @@ body {
 }
 @media (max-width: 767px) {
   .form-par .content .left .parson-data {
-    padding: 0px 20px;
+    padding: 20px 20px;
+    background-color: #4d4a4b;
+    border-top-right-radius: 60px;
   }
 }
 .form-par .content .left .parson-data .edit-pic {
@@ -170,6 +178,7 @@ body {
 }
 .form-par .content .left .parson-data .text p:nth-of-type(2) {
   color: var(--grean-color);
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   .form-par .content .left .inputs {
@@ -212,6 +221,7 @@ body {
 .form-par .content .left .inputs .input .data span:first-of-type {
   margin-left: 0.5rem;
   display: block;
+  font-size: 14px;
 }
 .form-par .content .left .inputs .input .angle {
   color: var(--grean-color);
@@ -227,7 +237,7 @@ body {
   }
 }
 .form-par .content .right {
-  width: 75%;
+  width: 70%;
   background-color: var(--grey-color);
 }
 @media (max-width: 767px) {
@@ -239,12 +249,13 @@ body {
 .form-par .content .right ul li {
   width: 50%;
   padding-bottom: 0.5rem;
-  border-bottom: 2px #bcbcbc solid;
-  color: #bcbcbc;
+  border-bottom: 3px #a3a3a3 solid;
+  font-size: 18px;
+  color: #a3a3a3;
   cursor: pointer;
 }
 .form-par .content .right ul li.active {
-  border-bottom: 2px var(--grean-color) solid;
+  border-bottom: 3px var(--grean-color) solid;
   color: var(--grean-color);
   cursor: auto;
 }
@@ -258,28 +269,40 @@ body {
   background-color: transparent;
   border: #696969 0.5px solid;
   outline: none;
+  text-align: start !important;
+  font-size: 14px !important;
   width: 100%;
   padding-right: 50px;
 }
 .form-par .content .right .content .form-part .input input::-webkit-input-placeholder, .form-par .content .right .content .form-part .input select::-webkit-input-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .content .right .content .form-part .input input::-moz-placeholder, .form-par .content .right .content .form-part .input select::-moz-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .content .right .content .form-part .input input:-ms-input-placeholder, .form-par .content .right .content .form-part .input select:-ms-input-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .content .right .content .form-part .input input::-ms-input-placeholder, .form-par .content .right .content .form-part .input select::-ms-input-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .content .right .content .form-part .input input::placeholder, .form-par .content .right .content .form-part .input select::placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .form-par .content .right .content .form-part .input input, .form-par .content .right .content .form-part .input select {
@@ -327,10 +350,12 @@ body {
   border: 0.5px solid #a3a3a3;
   padding: 20px 10px;
   text-align: center;
+  font-size: 14px;
   cursor: pointer;
 }
 .form-par .content .right .bootom .name span {
-  font-size: small;
+  font-size: 12px;
+  color: #696969 !important;
 }
 .form-par .content .right .bootom .icons {
   display: -webkit-box;
@@ -343,6 +368,7 @@ body {
   height: 30px;
   color: white;
   cursor: pointer;
+  border-radius: 4px;
 }
 .form-par .content .right .bootom .icons .icon-action:nth-of-type(1) {
   background-color: var(--red-color);
@@ -385,37 +411,52 @@ body {
   padding-right: 50px;
 }
 .form-par .fomr2 input::-webkit-input-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .fomr2 input::-moz-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .fomr2 input:-ms-input-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .fomr2 input::-ms-input-placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 .form-par .fomr2 input::placeholder {
-  text-align: center;
-  color: #696969;
+  font-size: 14px;
+  text-align: start;
+  color: #231f20;
+  text-transform: capitalize;
 }
 @media (max-width: 767px) {
   .form-par .fomr2 input {
     width: 100%;
   }
 }
-.form-par button {
+.form-par button:not(.modil) {
   margin-top: 3rem;
-  background-color: var(--grean-color);
+  background-color: #696969;
   outline: none;
   border: none;
   color: white;
   padding: 0.5rem 6rem;
+}
+.form-par .input-manue {
+  cursor: pointer;
+  color: #696969;
+  font-size: 1rem;
 }
 @media (max-width: 767px) {
   .form-par .input-manue {
@@ -432,4 +473,19 @@ body {
   .form-par .select-code {
     width: 100% !important;
   }
+}
+.form-par .top-left {
+  font-size: 16px !important;
+  margin-bottom: 0.5rem !important;
+}
+@media (max-width: 767px) {
+  .form-par .top-left {
+    font-size: 12px !important;
+  }
+}
+.form-par .main-title {
+  font-size: 1rem;
+}
+.form-par label {
+  font-size: 12px !important;
 }

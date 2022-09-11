@@ -1,6 +1,5 @@
 let allNavLinks = Array.from(document.querySelectorAll(".form-par .right ul li")) ; 
 let allContent = Array.from(document.querySelector(".form-par .content .right .content").children) ; 
-console.log(allContent)
 allNavLinks.forEach(e=> {
     e.addEventListener("click"  , (tr) => {
         allNavLinks.forEach(x=> {
