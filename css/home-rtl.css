@@ -202,11 +202,12 @@ body {
   color: white;
 }
 .form-par .content .left .inputs .input .data {
-  border-bottom: var(--grey-color) 2px solid;
+  border-bottom: #696969 2px solid;
   padding-bottom: 5px;
+  width: 90%;
 }
 .form-par .content .left .inputs .input .data span {
-  color: rgba(245, 245, 245, 0.3215686275);
+  color: #696969;
 }
 .form-par .content .left .inputs .input .data span:first-of-type {
   margin-left: 0.5rem;
@@ -255,30 +256,30 @@ body {
 .form-par .content .right .content .form-part .input input, .form-par .content .right .content .form-part .input select {
   border-radius: 4px;
   background-color: transparent;
-  border: #a3a3a3 0.5px solid;
+  border: #696969 0.5px solid;
   outline: none;
   width: 100%;
   padding-right: 50px;
 }
 .form-par .content .right .content .form-part .input input::-webkit-input-placeholder, .form-par .content .right .content .form-part .input select::-webkit-input-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .content .right .content .form-part .input input::-moz-placeholder, .form-par .content .right .content .form-part .input select::-moz-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .content .right .content .form-part .input input:-ms-input-placeholder, .form-par .content .right .content .form-part .input select:-ms-input-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .content .right .content .form-part .input input::-ms-input-placeholder, .form-par .content .right .content .form-part .input select::-ms-input-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .content .right .content .form-part .input input::placeholder, .form-par .content .right .content .form-part .input select::placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 @media (max-width: 767px) {
   .form-par .content .right .content .form-part .input input, .form-par .content .right .content .form-part .input select {
@@ -378,30 +379,30 @@ body {
 .form-par .fomr2 input {
   border-radius: 4px;
   background-color: transparent;
-  border: #a3a3a3 0.5px solid;
+  border: #696969 0.5px solid;
   outline: none;
   width: 100%;
   padding-right: 50px;
 }
 .form-par .fomr2 input::-webkit-input-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .fomr2 input::-moz-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .fomr2 input:-ms-input-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .fomr2 input::-ms-input-placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 .form-par .fomr2 input::placeholder {
   text-align: center;
-  color: black;
+  color: #696969;
 }
 @media (max-width: 767px) {
   .form-par .fomr2 input {
@@ -418,7 +419,8 @@ body {
 }
 @media (max-width: 767px) {
   .form-par .input-manue {
-    font-size: 0.4rem !important;
+    font-size: 14px !important;
+    font-weight: bold;
   }
 }
 .form-par .select-code {
