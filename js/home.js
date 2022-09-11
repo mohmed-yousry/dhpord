@@ -8,13 +8,34 @@ allNavLinks.forEach(e=> {
         allContent.forEach(con => {
             con.style.display = "none" ; 
             if(con.getAttribute("data-lab") == e.getAttribute("data-targ")) {
-                con.style.cssText = "                    display: inherit !important;                "
+                con.style.cssText = "display: inherit !important; "
 
             }
             e.classList.add("active")
         })
-        // console.log(e.getAttribute("data-targ")) = 
-        // if()
     })
 
 })
+
+
+let allFileBtn = Array.from(document.querySelectorAll(`.par-input .input input[type ="file"]`)) ; 
+allFileBtn.forEach(e=> {
+    e.addEventListener("change" , () => {
+        e.parentElement.parentElement.children[1].children[0].classList.remove("d-none");
+        e.parentElement.parentElement.children[1].children[1].classList.remove("d-none")
+        if(e.value.includes("fakepath")) {
+          
+          e.parentElement.parentElement.children[1].children[1].children[0].innerHTML = e.value.slice(12 , 27) ;
+        } else {
+            e.parentElement.parentElement.children[1].children[1].children[0].innerHTML = e.value.slice(12 , 27) ;
+
+        }
+        })
+    })
+
+
+// let editPic = document.querySelector(".edit-pic .edit") ; 
+// editPic.addEventListener("click" , () => {
+//     let modil = document.createElement("div") ; 
+   
+// })

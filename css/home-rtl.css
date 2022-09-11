@@ -101,6 +101,7 @@ body {
   background-color: var(--grey-color);
   padding: 15px;
   padding-right: 0px;
+  margin-top: 40px;
 }
 @media (max-width: 767px) {
   .form-par .content {
@@ -420,6 +421,14 @@ body {
     display: flex !important;
   }
 }
+.form-par .fomr2 {
+  margin-top: -60px;
+}
+@media (max-width: 767px) {
+  .form-par .fomr2 {
+    margin-top: -5px;
+  }
+}
 .form-par .fomr2 .main-title {
   color: var(--grean-color);
 }
@@ -509,7 +518,7 @@ body {
   }
 }
 .form-par .select-code {
-  width: 30% !important;
+  width: 100% !important;
   padding: 0.3rem 0px !important;
   text-align: start !important;
 }
@@ -554,4 +563,26 @@ body {
   .form-par .last {
     display: none !important;
   }
+}
+@media (max-width: 767px) {
+  .form-par .pohne {
+    width: 98% !important;
+  }
+}
+.form-par .pohne .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-par .pohne .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-par .pohne .enter input {
+  margin-left: 0.5rem;
 }
