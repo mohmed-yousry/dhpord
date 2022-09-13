@@ -387,3 +387,55 @@ select {
   left: 0;
   z-index: 144;
 }
+
+.acounts .title {
+  border-bottom: 2px solid #a3a3a3;
+  color: #231f20 !important;
+}
+.acounts table tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.acounts table thead th {
+  color: #696969;
+  font-size: 12px;
+}
+.acounts table tbody {
+  color: #231f20;
+  font-size: 14px;
+}
+.acounts table tbody td:nth-of-type(2) {
+  color: #0D9642;
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+@media (max-width: 450px) {
+  .acounts table tbody td:nth-of-type(2) {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+.acounts table tbody td:nth-of-type(2).error {
+  color: #bf202f;
+}
+.acounts table tbody td:last-of-type {
+  cursor: pointer;
+}
+.acounts table tbody td svg {
+  cursor: pointer;
+}
+.acounts .cost p {
+  font-size: 14px;
+  color: #231f20;
+}
+.acounts .cost p:last-of-type {
+  color: #0D9642;
+}

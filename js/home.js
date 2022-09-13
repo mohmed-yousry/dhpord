@@ -8,7 +8,9 @@ input = dropArea.querySelector(".input-imges-file1");
 let file; //this is a global variable and we'll use it inside multiple functions
 
 dropArea.onclick = ()=>{
+   
     input.click(); //if user click on the button then the input also clicked
+   
 }
 
 input.addEventListener("change", function(){
@@ -110,8 +112,22 @@ function showFile(){
     fileReader.onload = ()=>{
       let fileURL = fileReader.result; //passing user file source in fileURL variable
         // UNCOMMENT THIS BELOW LINE. I GOT AN ERROR WHILE UPLOADING THIS POST SO I COMMENTED IT
-      let imgTag = `<img src="${fileURL}" alt="image">`; //creating an img tag and passing user selected file source inside src attribute
+      let imgTag = `<img src="${fileURL}" alt="image">  
+      <div style = "background-color:#00000047 ; font-size : xxx-large" class="overlay align-items-center justify-content-center text-white position-absolute start-0 top-0 w-100 h-100 d-none">
+      X
+      </div>
+      `; //creating an img tag and passing user selected file source inside src attribute
       dropArea.innerHTML = imgTag; //adding that created img tag inside dropArea container
+      document.querySelector(".overlay").addEventListener("click" , () => {
+        dropArea.classList.remove("active")
+        
+        // console.log()
+        document.querySelector(".overlay").parentElement.innerHTML = `
+            <header class="heder2 heder">Drag &amp; Drop to Upload File</header>
+            <span class="text-uppercase">or click</span>
+            <input class="input-imges-file2 input-imges-file" type="file" hidden="">
+        `
+      })
     }
     fileReader.readAsDataURL(file);
   }else{
@@ -121,3 +137,5 @@ function showFile(){
   }
 }
 })
+
+// input.
