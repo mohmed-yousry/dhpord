@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
   </head>
   <body> 
       <nav class = "overflow-hidden">
-        <div class="container-fluid ps-0 bg-gray-100 main-nav pe-0 pe-lg-1">
+        <div class="container ps-0 bg-gray-100 main-nav pe-0 pe-lg-1">
             <div class="content d-flex justify-content-between align-items-center">
               <div class="logo bg-white pe-5 d-flex align-items-center order-md-0 order-1 ">
                 <svg id="Group_2510" data-name="Group 2510" xmlns="http://www.w3.org/2000/svg" width="411.099" height="59.454" viewBox="0 0 411.099 59.454">
@@ -320,7 +320,7 @@
                       </svg>
                       
                       
-                      <a  href="">طلباتى</a> 
+                      <a  href="order.html">طلباتى</a> 
                     </div>
                     <div class="angle">
                       <svg xmlns="http://www.w3.org/2000/svg" width="7.685" height="14.369" viewBox="0 0 7.685 14.369">
@@ -594,7 +594,9 @@
                           <path id="Path_14843" data-name="Path 14843" d="M380.923,227.2a7.675,7.675,0,0,0,0-5.05.511.511,0,0,0-.024-.069,7.675,7.675,0,0,0-14.447,0,.5.5,0,0,0-.024.069,7.675,7.675,0,0,0,0,5.05.546.546,0,0,0,.024.069,7.675,7.675,0,0,0,14.447,0,.51.51,0,0,0,.024-.069Zm-7.248,4.05c-.292,0-.764-.529-1.158-1.711a12.051,12.051,0,0,1-.453-1.939h3.221a12.028,12.028,0,0,1-.453,1.939c-.394,1.182-.865,1.711-1.158,1.711Zm-1.744-4.75c-.053-.587-.081-1.2-.081-1.825s.028-1.238.081-1.825h3.488c.053.587.081,1.2.081,1.825s-.028,1.238-.081,1.825Zm-4.831-1.825a6.545,6.545,0,0,1,.258-1.825h3.469c-.052.6-.078,1.212-.078,1.825s.026,1.226.078,1.825h-3.469a6.548,6.548,0,0,1-.258-1.825Zm6.575-6.575c.292,0,.764.529,1.158,1.711a12.019,12.019,0,0,1,.453,1.939h-3.221a12.013,12.013,0,0,1,.453-1.939c.394-1.182.865-1.711,1.158-1.711Zm2.848,4.75h3.469a6.585,6.585,0,0,1,0,3.65h-3.469c.052-.6.077-1.212.077-1.825s-.026-1.226-.077-1.825Zm3.04-1.1H376.4a10.565,10.565,0,0,0-1-3.421,6.6,6.6,0,0,1,4.168,3.421Zm-7.606-3.421a10.565,10.565,0,0,0-1,3.421h-3.166a6.6,6.6,0,0,1,4.168-3.421Zm-4.168,9.272h3.166a10.565,10.565,0,0,0,1,3.421,6.605,6.605,0,0,1-4.168-3.421Zm7.606,3.421a10.565,10.565,0,0,0,1-3.421h3.166a6.605,6.605,0,0,1-4.168,3.421Zm0,0" transform="translate(0)" fill="#0D9642"/>
                         </g>
                       </svg>
-                      <input type="text" placeholder="الدولة">
+                      <select name="" id="">
+                        <option value="">الدولة</option>
+                      </select>
     
                     </div>
                   </div>
@@ -605,7 +607,9 @@
                       <svg class ="svg-input" xmlns="http://www.w3.org/2000/svg" width="10.395" height="13.243" viewBox="0 0 10.395 13.243">
                         <path id="Path_14904" data-name="Path 14904" d="M16.257,1360.381a4.705,4.705,0,0,0-4.7,4.7c0,4.093,3.91,7.1,4.078,7.277a.855.855,0,0,0,.622.266h.027a.844.844,0,0,0,.628-.311c.166-.2,4.04-3.757,4.04-7.233a4.7,4.7,0,0,0-4.7-4.7Zm0,7.061a2.158,2.158,0,1,1,2.158-2.158A2.162,2.162,0,0,1,16.257,1367.442Z" transform="translate(-11.058 -1359.881)" fill="none" stroke="#0d9642" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
-                      <input type="text" placeholder="المدينة">
+                        <select name="" id="">
+                          <option value="">المدينة</option>
+                        </select>
     
                     </div>
                   </div>
@@ -768,7 +772,7 @@
                           </div>
                         </div>
 
-                        <button class="save mt-5">حفظ التعديلات </button>
+                        <button class="save mt-5" type="submit">حفظ التعديلات </button>
                       </form>
                   </div>
                   <!-- <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div> -->
