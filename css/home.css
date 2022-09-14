@@ -110,9 +110,16 @@ select {
   background-color: #696969;
   outline: none;
   border: none;
+  border-radius: 4px;
 }
 .save.grean {
   background-color: #0D9642;
+}
+.save.red {
+  background-color: #bf202f;
+}
+.save.mod {
+  width: 150px;
 }
 
 nav {
@@ -139,6 +146,8 @@ nav .main-nav .content .logo {
 }
 @media (max-width: 767px) {
   nav .main-nav .content .logo {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     width: 87vw;
     padding: 1rem;
     border-bottom-left-radius: 45px;
@@ -168,6 +177,12 @@ nav .main-nav .content .logo {
 
 .data .container .content {
   background-color: #F5F5F5;
+  border-top-right-radius: 120px;
+}
+@media (max-width: 767px) {
+  .data .container .content {
+    border-top-right-radius: 0px;
+  }
 }
 .data .container .content .right {
   background-color: #231F20;
@@ -186,6 +201,7 @@ nav .main-nav .content .logo {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 460px;
 }
 @media (min-width: 1440px) {
   .data .container .content .right {
@@ -205,6 +221,7 @@ nav .main-nav .content .logo {
 @media (max-width: 767px) {
   .data .container .content .right {
     width: 100%;
+    min-height: auto;
     border-top-right-radius: 0;
     transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -399,4 +416,53 @@ nav .main-nav .content .logo {
   top: 0;
   left: 0;
   z-index: 144;
+}
+
+.red-color {
+  color: #bf202f;
+}
+
+.grean-color {
+  color: #0D9642;
+}
+
+.modal h6, .modal h5 {
+  color: #0D9642;
+}
+.modal.error h6 {
+  color: #bf202f;
+}
+.modal p {
+  font-size: 14px;
+}
+.modal.error .modal-header {
+  border-color: #bf202f;
+}
+.modal.error .modal-header .modal-title {
+  color: #bf202f;
+}
+.modal .modal-header {
+  border-color: #0D9642;
+  padding: 1rem 1.5rem;
+}
+.modal .modal-header .modal-title {
+  color: #0D9642;
+}
+.modal .modal-content {
+  border-top-left-radius: 50px;
+  border-color: transparent;
+}
+.modal .modal-footer {
+  border-top: transparent;
+}
+.modal ul {
+  font-size: 14px;
+  color: #231f20;
+}
+.modal ul.reson li {
+  list-style: inside;
+}
+.modal tfoot td {
+  color: #0D9642;
+  font-size: 16px;
 }
