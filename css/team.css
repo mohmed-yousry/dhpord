@@ -524,40 +524,25 @@ nav .main-nav .content .logo img {
   font-size: 16px;
 }
 
-.acounts .title {
-  border-bottom: 2px solid #a3a3a3;
-  color: #231f20 !important;
+.info-team {
+  list-style: decimal;
 }
-.acounts .datels {
-  cursor: pointer;
+.info-team li {
+  cursor: auto !important;
 }
-.acounts table * {
+
+table * {
   white-space: nowrap;
 }
-.acounts table thead th {
-  color: #696969;
-  font-size: 12px !important;
+table td {
+  border: none;
 }
-.acounts table tr {
-  border-bottom: #a3a3a3 1px solid !important;
+
+.icon-action {
+  cursor: pointer;
 }
-.acounts table tbody td {
-  font-size: 14px;
-  color: #231f20;
-}
-.acounts table tbody td svg {
-  margin: 0 0.2rem;
-}
-.acounts table tbody td button {
-  font-size: 14px;
-}
-.acounts table tbody td p {
-  margin-bottom: 0;
-}
-.acounts .cost p {
-  font-size: 14px;
-  color: #231f20;
-}
-.acounts .cost p:last-of-type {
-  color: #0D9642;
+
+.oneTeam {
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
 }

@@ -12,6 +12,34 @@ ul {
   list-style: none;
   padding: 0 !important;
 }
+.fs-14 {
+  font-size: 14px;
+}
+
+.border-table {
+  border-bottom: 1px solid #696969;
+}
+
+.greay-color {
+  color: #696969;
+}
+
+.red-color {
+  color: #bf202f;
+}
+
+.grean-color {
+  color: #0D9642;
+}
+
+.black-color {
+  color: #231F20;
+}
+
+.blue-color {
+  color: #2d73b9;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -123,6 +151,9 @@ select {
 }
 .save.mod {
   width: 150px;
+}
+.save.blue {
+  background-color: #2d73b9;
 }
 
 nav {
@@ -450,14 +481,6 @@ nav .main-nav .content .logo img {
   top: 0;
   left: 0;
   z-index: 144;
-}
-
-.red-color {
-  color: #bf202f;
-}
-
-.grean-color {
-  color: #0D9642;
 }
 
 .modal h6, .modal h5 {

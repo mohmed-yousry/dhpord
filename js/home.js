@@ -161,14 +161,14 @@ function showFile(){
 // }) 
 
 
-// edit header
-let container = document.querySelector(".container") ; 
-let logo = document.querySelector(".container .logo") ; 
-// console.log(logo)
-window.onresize = () => {
-  console.log()
-  let between = window.innerWidth - container.clientWidth ; 
-  // logo.style.transform = `translateX(-${between}px);`
-  console.log(between)
-}
-// edit header
+// // edit header
+// let container = document.querySelector(".container") ; 
+// let logo = document.querySelector(".container .logo") ; 
+// // console.log(logo)
+// window.onresize = () => {
+//   console.log()
+//   let between = window.innerWidth - container.clientWidth ; 
+//   // logo.style.transform = `translateX(-${between}px);`
+//   console.log(between)
+// }
+// // edit header
