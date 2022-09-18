@@ -20,6 +20,14 @@ ul {
   border-bottom: 1px solid #696969;
 }
 
+.border-table-top {
+  border-top: 1px solid #696969;
+}
+
+.border-div {
+  border: 1px solid #231F20;
+}
+
 .greay-color {
   color: #696969;
 }
@@ -33,7 +41,7 @@ ul {
 }
 
 .black-color {
-  color: #231F20;
+  color: #231F20 !important;
 }
 
 .blue-color {
@@ -42,6 +50,10 @@ ul {
 
 a {
   text-decoration: none !important;
+  color: white;
+}
+a:hover {
+  color: white;
 }
 
 .main-title {
@@ -424,6 +436,9 @@ nav .main-nav .content .logo img {
   cursor: pointer;
   position: relative;
 }
+.drag-area.drag-area5 {
+  min-height: 120px;
+}
 
 .drag-area.drag-area1 {
   width: 50%;
@@ -505,6 +520,12 @@ nav .main-nav .content .logo img {
 .modal .modal-header .modal-title {
   color: #0D9642;
 }
+.modal .modal-header.blue {
+  border-color: #2d73b9;
+}
+.modal .modal-header.blue .modal-title {
+  color: #2d73b9;
+}
 .modal .modal-content {
   border-top-left-radius: 50px;
   border-color: transparent;
@@ -519,9 +540,13 @@ nav .main-nav .content .logo img {
 .modal ul.reson li {
   list-style: inside;
 }
-.modal tfoot td {
+.modal td {
   color: #0D9642;
   font-size: 16px;
+  border: none;
+}
+td, th {
+  border: none;
 }
 
 table thead th {

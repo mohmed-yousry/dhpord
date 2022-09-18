@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/order.css">
+  </head>
+  <body> 
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ex11" data-bs-whatever="@mdo">طلب انشاء فريق</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ex12" data-bs-whatever="@mdo">دعوة أعضاء للانضمام للفريق</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ex13" data-bs-whatever="@mdo">طلب مرفوض فريقى</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ex14" data-bs-whatever="@mdo">مراجعة عملية الدفع فى فريقى</button>
+
+<!-- طلب انشاء فريق-->
+<div class="modal fade" id="ex11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">طلب إنشاء فريق</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body w-75 mx-auto">
+            <form >
+                <div class="row">
+
+                    <div class="col-md-6 mb-2">
+                            <label for="">اسم الفريق بالعربية</label>
+                            <div class="input position-relative">
+                                <input type="text" >
+                            </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                            <label for="">اسم الفريق بالانجليزية</label>
+                            <div class="input position-relative">
+                                <input type="text" >
+                            </div>
+                    </div>
+
+                    <div class="col-md-6 mb-2">
+                        <label for="">الموقع الالكترونى</label>
+                        <div class="input position-relative">
+                            <input type="text" >
+                        </div>
+                    
+                </div>
+                <div class="col-md-6 mb-2">
+                    <label for="">البريد الالكترونى</label>
+                    <div class="input position-relative">
+                        <input type="email" >
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 mb-2 d-flex align-items-center justify-content-between">
+                    <div style="width: 60%;">
+                        <label for="">رقم الجوال</label>
+                    
+                        <div class="input position-relative">
+                        <input type="text" placeholder="0111111111">
+                        </div>
+                      </div>
+
+                      <div class ="" style="width: 35%;">
+                        <label for="">رمز الدولة</label>
+                    
+                        <div class="input position-relative">
+
+                          <input type="text" placeholder="+966">
+    
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-2">
+                        <label for="">المدينة</label>
+                        
+                        <div class="input position-relative">
+                            <select name="" id="">
+                              <option value=""></option>
+                            </select>
+        
+                      </div>
+                </div>
+
+                <div class="col-12 mb-2">
+                    <label for="">العنوان</label>
+                    <div class="input position-relative">
+                        <input type="text" >
+                    </div>
+                
+            </div>
+
+            
+
+        <div class="col-md-6 mb-2">
+            <label for="">نوع الفريق</label>
+            
+            <div class="input position-relative">
+                <select name="" id="">
+                  <option value="">فريق سباقات شامل</option>
+                </select>
+
+          </div>
+    </div>
+
+    <div class="col-md-6  mb-3">
+        <label for="">صورة الفريق</label>
+        
+        <div class="input position-relative " >
+
+            <div class="drag-area5 drag-area">
+              <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+              <header class="heder4 heder">Drag &amp; Drop to Upload File</header>
+              <span class="text-uppercase ">or click</span>
+              <input class="input-imges-file4 input-imges-file" type="file" hidden="">
+          </div>
+        </div>
+      </div>
+                </div>
+        <button class="save grean mt-4 mx-auto">حفظ معلومات الفريق</button>
+            </form>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+<!--طلب انشاء فريق-->
+<!-- دعوة أعضاء للانضمام للفريق -->
+<div class="modal fade" id="ex12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header blue">
+          <h5 class="modal-title " id="exampleModalLabel">دعوة أعضاء للانضمام للفريق</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body w-75 mx-auto">
+            <div class="row mt-4">
+                <div class="col-md-12 ">
+                    <div class="input position-relative ">
+                        <svg class="svg-input" id="Search" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                            <rect id="Rectangle_553" data-name="Rectangle 553" width="22" height="22" fill="none"></rect>
+                            <g id="Group_2657" data-name="Group 2657" transform="translate(3.409 3.225)">
+                              <path id="Path_88" data-name="Path 88" d="M312.953,62.763a6.375,6.375,0,1,1-6.375,6.375A6.382,6.382,0,0,1,312.953,62.763Z" transform="translate(-306.578 -62.763)" fill="none" stroke="#0D9642" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                              <line id="Line_7" data-name="Line 7" x2="4.762" y2="4.762" transform="translate(10.419 11.262)" fill="none" stroke="#0D9642" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></line>
+                            </g>
+                          </svg>
+                        <input type="text" placeholder="ابحث من خلال اسم المشترك أو رقم عضويته">
+                      </div>
+                </div>
+                <button class = "save grean mt-4 mx-auto">بحث</button>
+            </div>
+
+            <div class="table-responsive mt-5">
+                <table class="table ">
+                    <tbody class="fs-14">
+
+                        <tr class="border-table d-flex justify-content-between align-items-center">
+                            
+                            <td class="d-flex align-items-center border-0">
+                                <div class="icon me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36">
+                                        <g id="Group_2594" data-name="Group 2594" transform="translate(-137.172 -64.438)">
+                                          <g id="Group_17" data-name="Group 17" transform="translate(147.131 71.759)">
+                                            <ellipse id="Ellipse_736" cx="5.032" cy="4.957" rx="5.032" ry="4.957" transform="translate(2.95 0)" fill="none" stroke="#696969" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></ellipse>
+                                            <path id="Path_33945" d="M0,4.236A3.33,3.33,0,0,1,.231,3C.713,1.831,5.1-1.474,5.926-1.543a21.8,21.8,0,0,1,4.617,0c.83.07,4.7,3.316,5.179,4.541a3.453,3.453,0,0,1,0,2.487A3.98,3.98,0,0,1,12.753,7.54a13.87,13.87,0,0,1-2.468.432,34.981,34.981,0,0,1-4.617,0A13.614,13.614,0,0,1,3.21,7.54,4,4,0,0,1,.231,5.485,3.428,3.428,0,0,1,0,4.236Z" transform="translate(0 13.339)" fill="none" stroke="#696969" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                          </g>
+                                          <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="18" cy="17.5" rx="18" ry="17.5" transform="translate(137.672 64.938)" fill="none" stroke="#696969" stroke-width="1"></ellipse>
+                                        </g>
+                                      </svg>
+                                      
+                                </div>
+                                <div class="text">
+                                    <p class="blue-color fs-5">اسم المشترك</p>
+                                    <p class="black-color">ID #SAMF17157</p>
+
+                                </div>
+                            </td>
+                         <td>
+                            <button class="save blue w-100">إرسال دعوة للانضمام <span class="d-inline-block ms-3"><svg id="Submit_invitation" data-name="Submit invitation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <rect id="Rectangle_551" data-name="Rectangle 551" width="20" height="20" fill="none"></rect>
+                                <g id="Group_2654" data-name="Group 2654" transform="translate(750.238 -1063.991) rotate(45)">
+                                  <g id="Group_2477" data-name="Group 2477" transform="translate(-441.242 2370.134) rotate(-90)">
+                                    <path id="Path_156" data-name="Path 156" d="M3790.934,672.865l-4.708,4.708,4.708,4.708" transform="translate(-2698.947 -0.33)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                  </g>
+                                  <g id="Group_2478" data-name="Group 2478" transform="translate(913.242 195.573) rotate(90)">
+                                    <path id="Path_156-2" data-name="Path 156" d="M3790.934,672.865l-4.708,4.708,4.708,4.708" transform="translate(-2698.947 -0.33)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                  </g>
+                                </g>
+                              </svg></span> </button>
+                         </td>
+                               
+                       
+                          
+                        </tr>
+                        <tr class="border-table d-flex justify-content-between align-items-center">
+                            
+                            <td class="d-flex align-items-center border-0">
+                                <div class="icon me-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36">
+                                        <g id="Group_2594" data-name="Group 2594" transform="translate(-137.172 -64.438)">
+                                          <g id="Group_17" data-name="Group 17" transform="translate(147.131 71.759)">
+                                            <ellipse id="Ellipse_736" cx="5.032" cy="4.957" rx="5.032" ry="4.957" transform="translate(2.95 0)" fill="none" stroke="#696969" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></ellipse>
+                                            <path id="Path_33945" d="M0,4.236A3.33,3.33,0,0,1,.231,3C.713,1.831,5.1-1.474,5.926-1.543a21.8,21.8,0,0,1,4.617,0c.83.07,4.7,3.316,5.179,4.541a3.453,3.453,0,0,1,0,2.487A3.98,3.98,0,0,1,12.753,7.54a13.87,13.87,0,0,1-2.468.432,34.981,34.981,0,0,1-4.617,0A13.614,13.614,0,0,1,3.21,7.54,4,4,0,0,1,.231,5.485,3.428,3.428,0,0,1,0,4.236Z" transform="translate(0 13.339)" fill="none" stroke="#696969" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                          </g>
+                                          <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="18" cy="17.5" rx="18" ry="17.5" transform="translate(137.672 64.938)" fill="none" stroke="#696969" stroke-width="1"></ellipse>
+                                        </g>
+                                      </svg>
+                                      
+                                </div>
+                                <div class="text">
+                                    <p class="blue-color fs-5">اسم المشترك</p>
+                                    <p class="black-color">ID #SAMF17157</p>
+
+                                </div>
+                            </td>
+                         <td>
+                            <button class="save blue w-100">إرسال دعوة للانضمام <span class="d-inline-block ms-3"><svg id="Submit_invitation" data-name="Submit invitation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <rect id="Rectangle_551" data-name="Rectangle 551" width="20" height="20" fill="none"></rect>
+                                <g id="Group_2654" data-name="Group 2654" transform="translate(750.238 -1063.991) rotate(45)">
+                                  <g id="Group_2477" data-name="Group 2477" transform="translate(-441.242 2370.134) rotate(-90)">
+                                    <path id="Path_156" data-name="Path 156" d="M3790.934,672.865l-4.708,4.708,4.708,4.708" transform="translate(-2698.947 -0.33)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                  </g>
+                                  <g id="Group_2478" data-name="Group 2478" transform="translate(913.242 195.573) rotate(90)">
+                                    <path id="Path_156-2" data-name="Path 156" d="M3790.934,672.865l-4.708,4.708,4.708,4.708" transform="translate(-2698.947 -0.33)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                  </g>
+                                </g>
+                              </svg></span> </button>
+                         </td>
+                               
+                       
+                          
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+              </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+<!-- دعوة أعضاء للانضمام للفريق-->
+
+
+<!-- طلب مرفوض -->
+<div class="modal fade error" id="ex13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title me-2" id="exampleModalLabel">الطلب مرفوض</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div class="table-responsive ">
+              <table class="table ">
+                  <thead style="color: #696969; font-size: 12px;">
+                      <tr>
+                        <th scope="col">رقم الطلب</th>
+                        <th scope="col">تاريخ الطلب</th>
+                        <th scope="col">نوع الطلب</th>
+                      </tr>
+                  </thead>
+                  <tbody style="color: #231f20; font-size: 14px;">
+                      <tr>
+                          <td>98723763</td>
+                          <td>أغسطس 24 , 2022</td>
+                          <td>طلب إنشاء فريق</td>
+                      </tr>
+                  </tbody>
+              </table>
+              
+              <h6>أسباب الرفض : </h6>
+             <ul class ="reson">
+                <li>السبب 1</li>
+                <li>السبب 1</li>
+                <li>السبب 1</li>
+             </ul>
+             <p style="color :#231f20" class="text-center">بإمكانك تعديل معلومات حسابك وسنقوم بمراجعة طلبك مرة أخرى</p>
+         </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="save grean mod">تعديل معلومات الفريق</button>
+          <button type="button" class="save red mod" data-bs-dismiss="modal" >الغاء الطلب</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- طلب مرفوض -->
+
+
+
+<!-- مراجعة عملية الدفع فى فريقى  -->
+<div class="modal fade price" id="ex14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <ul style="width: 95%;" class="nav nav-tabs justify-content-between border-0" id="myTab" role="tablist">
+            <li class="nav-item w-50" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane1" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">مراجعة عملية الدفع</button>
+            </li>
+            <li class="nav-item w-50" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane1" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" tabindex="-1">تأكيد عملية الدفع</button>
+            </li>
+          
+          </ul>
+          <!-- <h5 class="modal-title me-2" id="exampleModalLabel">التحقق من بريدك الالكتروني</h5> -->
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-3 w-75 mx-auto">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+             <p style="color :#696969 ;">هل انت متأكد من رغبتك بشراء عضوية</p>
+              <h5>انشاء فريق</h5>
+              <div class="table-responsive ">
+                <table class="table ">
+                    <thead style="color: #696969; font-size: 12px;">
+                        <tr class ="black-color">
+                          <th scope="col">اسم الخدمة</th>
+                          <th scope="col">التكلفة</th>
+                        </tr>
+                    </thead>
+                    <tbody style="color: #231f20; font-size: 14px;">
+                        <tr class ="none">
+                            <td class ="black-color">عضوية ملاك سيارات معدلة؟</td>
+                            <td class ="black-color">150 SAR</td>
+                        </tr>
+                        <tr class ="">
+                            <td class ="black-color">رسوم التوصيل</td>
+                            <td class ="black-color">50 SAR</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr class ="none">
+                        <td>التكلفة الاجمالية</td>
+                        <td>200 SAR</td>
+                      </tr>
+                    </tfoot>
+                </table>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="save mod grean">تأكيد الطلب</button>
+                  <button type="button" class="save mod red">الغاء الطلب</button>
+                </div>
+           </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane1" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <form >
+              <div style="background-color: #d5d5d5;" class="row p-1">
+  
+                  <div class="col-12 my-2">
+                    <select class ="bg-white" name="" id="">
+                      <option value="">نوع البطاقة</option>
+                    </select>
+                  </div>
+                  <div class="col-12 my-2">
+                    <input class ="bg-white" type="text" placeholder="رقم البطاقة">
+                  </div>
+                  
+                </div>
+                <div style="background-color: #d5d5d5;" class="row p-1">
+                  <div class="col-6 position-relative mb-3">
+                    <label class ="text-start ps-3" for="">تاريخ الانتهاء</label>
+                    
+                    <div class="input position-relative">
+  
+                      <input class ="bg-white" type="text" placeholder="شهر / سنة">
+  
+                    </div>
+                  </div>
+                  <div class="col-6 position-relative mb-3">
+                    <label class ="text-start ps-3" for="">رمز التحقق</label>
+                    
+                    <div class="input position-relative">
+  
+                      <input class ="bg-white" type="text" placeholder="CCV">
+  
+                    </div>
+                  </div>
+              </div>
+  
+              <button class="save grean mt-4 mx-auto">تأكيد الدفع</button>
+            </form>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+ <!-- مراجعة عملية الدفع فى فريقى  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
