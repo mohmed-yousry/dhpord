@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body> 
       <nav class = "overflow-hidden">
@@ -42,7 +42,7 @@
 
       <section class ="data mt-md-5 mt-0">
         <div class= "container">
-          <div class="content d-flex flex-column flex-md-row overflow-hidden">
+          <div class="content d-flex flex-column flex-md-row ">
              
               <div class="right p-0 p-md-5 ">
                 <h6 class="text-white fs-14 mt-3">اهلا بك فى موقع</h6>
@@ -180,7 +180,7 @@
                         </div>
                         <p class ="red-color mt-4 fs-12">سيتم ارسال رابط للتأكد من بريدك الالكترونى</p>
 
-                        <button class="save mt-5 grean" type="submit">ارسال</button>
+                        <a href="register2.html" class="save mt-5 grean" >ارسال</a>
                       </form>
                   </div>
 
@@ -193,9 +193,25 @@
       </section>
 
 
-        <!-- modil -->
-
-        <!-- modil -->
+        <!-- التحقق من البريد الالكترونى -->
+        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title me-2" id="exampleModalLabel">التحقق من بريدك الالكتروني</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center p-5">
+                  <h6 class = "mb-3">شكرا لك</h6>
+                  <p style="color:#696969 ">  تم ارسال رابط الى بريدك الالكتروني
+                    الرجاء الضغط على الرابط لاستكمال عملية التسجيل
+                  </p>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!-- التحقق من البريد الالكترونى -->
 
 
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Document</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body> 
       <nav class = "overflow-hidden">
@@ -42,7 +42,7 @@
 
       <section class ="data mt-md-5 mt-0">
         <div class= "container">
-          <div class="content d-flex flex-column flex-md-row overflow-hidden">
+          <div class="content d-flex flex-column flex-md-row ">
              
               <div class="right p-0 p-md-5 ">
                 <h6 class="text-white fs-14 mt-3">اهلا بك فى موقع</h6>
@@ -117,7 +117,7 @@
                 
                 </ul>
                 <div class="tab-content mt-3" id="myTabContent">
-                    <form action="">
+                    <form action="index.html">
                         <h5 class="main-title red mt-4">معلومات شخصية</h5>
         
                         <div class="row">
@@ -221,7 +221,7 @@
                                 </g>
                                 </g>
                                 </svg>
-                              <select name="" id="">
+                              <select name="" id="" class ="red-img">
                                 <option value="">السعودية</option>
                               </select>
                               <!-- <input type="text" placeholder="الاسم الأول"> -->
@@ -256,7 +256,7 @@
                               <svg class="svg-input" xmlns="http://www.w3.org/2000/svg" width="10.676" height="13.609" viewBox="0 0 10.676 13.609">
                                 <path id="Path_14926" data-name="Path 14926" d="M16.4,1360.381a4.846,4.846,0,0,0-4.84,4.84c0,4.215,4.027,7.31,4.2,7.5a.881.881,0,0,0,.64.274h.028a.869.869,0,0,0,.647-.32c.171-.208,4.161-3.869,4.161-7.45a4.844,4.844,0,0,0-4.836-4.84Z" transform="translate(21.734 1373.49) rotate(180)" fill="none" stroke="#BF202F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                               </svg>
-                              <select name="" id="">
+                              <select name="" id="" class ="grean-img">
                                 <option value="">o+</option>
                               </select>
         
@@ -276,8 +276,9 @@
                                 <path id="Path_14300" data-name="Path 14300" d="M-188.344,304.683a4.359,4.359,0,0,1-4.36,4.36,4.359,4.359,0,0,1-4.359-4.36,4.358,4.358,0,0,1,4.359-4.359A4.359,4.359,0,0,1-188.344,304.683Zm3.75-3.148v-4.274h-4.274m4.274,0-4.723,4.723" transform="translate(0.357 0.047)" fill="none" stroke="#bf202f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"></path>
                                 </g>
                                 </svg>
-                              <select name="" id="">
-                                <option value="">ذكر</option>
+                              <select name="" id="" class="red-img select-gender">
+                                <option value="ذكر">ذكر</option>
+                                <option value="انثى">انثى </option>
                               </select>
         
                             </div>
@@ -345,10 +346,8 @@
                         <label for=""> تاريخ الميلاد </label>
                         
                         <div class="input position-relative">
-                          <!-- <svg class ="svg-input" xmlns="http://www.w3.org/2000/svg" width="12.259" height="12.307" viewBox="0 0 12.259 12.307">
-                            <path id="Path_14906" data-name="Path 14906" d="M-152.5,631.624h.853a1.17,1.17,0,0,1,1.169,1.169v8.356a1.17,1.17,0,0,1-1.169,1.169h-8.865a1.17,1.17,0,0,1-1.169-1.169v-8.356a1.17,1.17,0,0,1,1.169-1.169h8.012Zm2.037,2.951h-11.259m2.949-3.564V632.7m5.386,0V631.01" transform="translate(162.217 -630.51)" fill="none" stroke="#0d9642" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"></path>
-                            </svg> -->
-                          <input type="date" value="2018-07-22">
+                    
+                          <input class="ps-1 text-start" type="date" value="2018-07-22">
         
                         </div>
                       </div>
@@ -407,7 +406,7 @@
                     
                     </div>
         
-                    <button type="submit" class="save grean">تسجيل</button>
+                    <button type="submit"  data-bs-toggle="modal" data-bs-target="#exampleModal8" data-bs-whatever="@getbootstrap" type="submit" class="save grean">تسجيل</button>
                   </form>
                   </div>
 
@@ -420,14 +419,29 @@
       </section>
 
 
-        <!-- modil -->
-
-        <!-- modil -->
+        <!-- تم التسجيل بنجاح -->
+        <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title me-2" id="exampleModalLabel">تسجيل حساب</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center p-5">
+                  <h6 class = "mb-3">شكرا لك</h6>
+                  <p style="color:#696969 "> لقد تم تسجيل حسابك بنجاح
+                  </p>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <!-- تم التسجيل بنجاح -->
 
 
 
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <!-- <script src="js/login.js"></script> -->
+    <script src="js/register2.js"></script>
   </body>
 </html>
