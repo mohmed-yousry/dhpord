@@ -553,31 +553,22 @@ td, th {
   border: none;
 }
 
-table thead th {
-  color: #696969;
-  font-size: 12px !important;
-}
-table tr {
-  border-bottom: #a3a3a3 1px solid !important;
-}
-table tr.none {
-  border-bottom: transparent 1px solid !important;
-}
-table tbody td {
-  font-size: 14px;
-  color: #231f20;
-  white-space: nowrap;
-}
-table tbody td svg {
-  margin: 0 0.2rem;
-}
-table tbody td button {
-  font-size: 14px;
-}
-table tbody td p {
-  margin-bottom: 0;
+.forget-pass {
+  cursor: pointer;
 }
 
-.edit-acount:hover {
-  color: white;
+.main-title {
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .main-title {
+    font-size: 1rem;
+  }
+}
+
+.data .container .content .left ul li {
+  cursor: auto;
+}
+.data .container .content .left ul li button {
+  cursor: auto;
 }

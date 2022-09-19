@@ -1,5 +1,3 @@
-
-
 // dagre 1 //selecting all required elements
 const dropArea = document.querySelector(".drag-area1"),
 dragText = dropArea.querySelector(".heder1"),
