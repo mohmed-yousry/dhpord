@@ -73,3 +73,24 @@ function showFile(){
   }
 }
 })
+
+
+// handle select gender
+let selectGender = document.querySelector(".select-gender") ; 
+let allOptionGender = Array.from(document.querySelectorAll(".select-gender option"))
+selectGender.addEventListener("change" ,(tr) => {
+
+  if(tr.target.value == "انثى") {
+    selectGender.parentElement.children[0].innerHTML = `
+    <path id="Path_14301" data-name="Path 14301" d="M-197.259,300.456a4.36,4.36,0,0,1-4.36,4.36,4.36,4.36,0,0,1-4.36-4.36,4.36,4.36,0,0,1,4.36-4.36A4.36,4.36,0,0,1-197.259,300.456Zm-4.36,4.36v4.274m2.137-2.136h-4.275" transform="translate(206.479 -295.596)" fill="none" stroke="#BF202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    `
+    console.log("fam")
+  } else {
+    selectGender.parentElement.children[0].innerHTML = `
+    <g id="Group_2553" data-name="Group 2553" transform="translate(197.206 -296.601)">
+    <path id="Path_14300" data-name="Path 14300" d="M-188.344,304.683a4.359,4.359,0,0,1-4.36,4.36,4.359,4.359,0,0,1-4.359-4.36,4.358,4.358,0,0,1,4.359-4.359A4.359,4.359,0,0,1-188.344,304.683Zm3.75-3.148v-4.274h-4.274m4.274,0-4.723,4.723" transform="translate(0.357 0.047)" fill="none" stroke="#bf202f" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"></path>
+    </g>
+    `
+  }
+})
+// handle select gender
