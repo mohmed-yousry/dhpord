@@ -75,6 +75,7 @@ function showFile(){
 })
 
 
+
 // handle select gender
 let selectGender = document.querySelector(".select-gender") ; 
 let allOptionGender = Array.from(document.querySelectorAll(".select-gender option"))
@@ -94,3 +95,21 @@ selectGender.addEventListener("change" ,(tr) => {
   }
 })
 // handle select gender
+
+// edit logo 
+
+let links = document.querySelector("nav .links") ; 
+let container = document.querySelector(".container") ; 
+window.onload = () => {
+  let mar = (window.innerWidth - container.clientWidth ) / 2 ; 
+  links.style.marginLeft = `${mar}px`
+}
+window.addEventListener("resize" , () => {
+  let mar = (window.innerWidth - container.clientWidth ) / 2 ; 
+  links.style.marginLeft = `${mar}px`
+  if(window.innerWidth < 767) {
+  }
+
+})
+
+// edit logo 

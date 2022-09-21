@@ -29,7 +29,7 @@ ul {
 }
 
 .greay-color {
-  color: #696969;
+  color: #696969 !important;
 }
 
 .red-color {
@@ -37,7 +37,7 @@ ul {
 }
 
 .grean-color {
-  color: #0D9642;
+  color: #0D9642 !important;
 }
 
 .black-color {
@@ -45,7 +45,7 @@ ul {
 }
 
 .blue-color {
-  color: #2d73b9;
+  color: #2d73b9 !important;
 }
 
 a {
@@ -67,7 +67,7 @@ a:hover {
 
 label {
   font-size: 12px;
-  color: #696969;
+  color: black;
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -128,7 +128,7 @@ select {
   border: #A3A3A3 0.5px solid;
   background-color: transparent;
   height: 30px;
-  padding-right: 10%;
+  padding-right: 12%;
   outline: none;
   font-size: 14px;
   color: gray;
@@ -202,12 +202,13 @@ nav .main-nav .content {
   height: inherit;
 }
 nav .main-nav .content .logo {
-  height: 94%;
   width: 40vw;
   border-bottom-left-radius: 50px;
+  height: 94%;
 }
 nav .main-nav .content .logo img {
   max-height: 94%;
+  margin-top: -4%;
 }
 @media (max-width: 767px) {
   nav .main-nav .content .logo {
@@ -216,43 +217,18 @@ nav .main-nav .content .logo img {
     border-bottom-left-radius: 45px;
   }
 }
-@media (min-width: 1024px) {
-  nav .main-nav .content .links {
-    margin-left: 4%;
-  }
-}
-@media (min-width: 1280px) {
-  nav .main-nav .content .links {
-    margin-left: 6%;
-  }
-}
-@media (min-width: 1366px) {
-  nav .main-nav .content .links {
-    margin-left: 9%;
-  }
-}
-@media (min-width: 1440px) {
-  nav .main-nav .content .links {
-    margin-left: 5%;
-  }
-}
-@media (min-width: 1920px) {
-  nav .main-nav .content .links {
-    margin-left: 16%;
-  }
-}
-@media (min-width: 1680px) {
-  nav .main-nav .content .links {
-    margin-left: 11%;
-  }
+nav .main-nav .content .links svg {
+  margin-left: 0.5rem;
 }
 
 .nav-item button {
   font-size: 18px;
+  white-space: nowrap;
 }
 @media (max-width: 767px) {
   .nav-item button {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bolder;
   }
 }
 .nav-item .nav-link {
@@ -290,26 +266,11 @@ nav .main-nav .content .logo img {
   -moz-transform: translate(20px, -20px);
   -ms-transform: translate(20px, -20px);
   -o-transform: translate(20px, -20px);
-  width: 30vw;
+  width: 35vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   min-height: 460px;
-}
-@media (min-width: 1440px) {
-  .data .container .content .right {
-    width: 26vw;
-  }
-}
-@media (min-width: 1680px) {
-  .data .container .content .right {
-    width: 23vw;
-  }
-}
-@media (min-width: 1920px) {
-  .data .container .content .right {
-    width: 20vw;
-  }
 }
 @media (max-width: 767px) {
   .data .container .content .right {
@@ -351,35 +312,48 @@ nav .main-nav .content .logo img {
   right: -0.5rem;
   cursor: pointer;
 }
-.data .container .content .right .select .select-name {
+.data .container .content .right .all-select {
+  overflow-x: hidden;
+}
+.data .container .content .right .all-select .select .select-name {
   border-color: #696969 !important;
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.data .container .content .right .select .select-name a {
+.data .container .content .right .all-select .select .select-name svg {
+  margin-left: 10px;
+}
+.data .container .content .right .all-select .select .select-name a {
   color: #696969;
 }
 @media (max-width: 767px) {
-  .data .container .content .right .select .select-name a {
+  .data .container .content .right .all-select .select .select-name a {
     font-size: 14px;
     white-space: nowrap;
   }
 }
 @media (max-width: 550px) {
-  .data .container .content .right .select .select-name a {
+  .data .container .content .right .all-select .select .select-name a {
     font-size: 12px !important;
   }
 }
-.data .container .content .right .select .select-name.active {
+.data .container .content .right .all-select .select .select-name.active {
   border-color: #0D9642 !important;
 }
-.data .container .content .right .select .select-name.active a {
+.data .container .content .right .all-select .select .select-name.active a {
   color: white;
 }
-.data .container .content .right .select .angle {
+.data .container .content .right .all-select .select .angle {
   width: 30px;
 }
 .data .container .content .left {
   width: 70vw;
+  padding-left: 3vw !important;
 }
 @media (max-width: 767px) {
   .data .container .content .left {
@@ -557,7 +531,6 @@ nav .main-nav .content .logo img {
   list-style: inside;
 }
 .modal td {
-  color: #0D9642;
   font-size: 16px;
   border: none;
 }
