@@ -392,9 +392,14 @@ nav .main-nav .content .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
-.data .container .content .right .all-select .select .select-name svg {
-  margin-left: 10px;
+
+@media (min-width : 768px) {
+  .data .container .content .right .all-select .select .select-name svg {
+    margin-left: 18.5px;
+  }
 }
 .data .container .content .right .all-select .select .select-name a {
   color: #696969;
@@ -405,6 +410,9 @@ nav .main-nav .content .logo {
     white-space: nowrap;
   }
 
+  .data .container .content .right .all-select .select .select-name svg {
+    margin-left: 12px;
+  }
   .data .container .content .right .all-select .select .select-name {
     width: 90%;
   }
@@ -421,6 +429,8 @@ nav .main-nav .content .logo {
 }
 .data .container .content .right .all-select .select .select-name.active {
   border-color: #0D9642 !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 .data .container .content .right .all-select .select .select-name.active a {
   color: white;
