@@ -451,7 +451,8 @@ nav .main-nav .content .logo {
 @media (max-width: 767px) {
   .data .container .content .left {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 15px !important;
+    padding: 0.6rem !important;
   }
 }
 .data .container .content .left ul li {
