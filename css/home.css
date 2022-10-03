@@ -1,0 +1,325 @@
+/* start Header */
+@font-face {
+    font-family: HacenMaghrebBd;
+    src: url(../font/HacenMaghrebBdRegular.ttf);
+  }
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: HacenMaghrebBd;
+  }
+
+:root {
+    --main-color : #0b6f32 ; 
+    --secend-color : #231f20 ; 
+    --gray-color : #a3a3a3 ;
+}
+
+
+  a {
+    text-decoration: none;
+  }
+.fs-10 {
+    font-size: 10px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 114px;
+    height: 36px;
+    /* margin: 39.8px 0 41.7px 262px; */
+    padding: 5px 12px 7px 14.3px;
+    border-radius: 4px;
+    border: solid 1px #a3a3a3;
+}
+.header {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+.header .swiper-pagination-vertical.swiper-pagination-bullets{
+    left: 8.3% !important;
+    right: unset;
+    /* position: relative; */
+}
+
+@media (max-width : 767px) {
+    .header .swiper-pagination-vertical.swiper-pagination-bullets{
+        top: 77%;
+    }
+}
+
+.header .swiper-pagination-vertical.swiper-pagination-bullets::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 60.6px;
+    background-color: white;
+    top: -210%;
+
+}
+
+@media (max-width : 767px) {
+    .header .swiper-pagination-vertical.swiper-pagination-bullets::after {
+        top: -170%;
+        height: 40px;
+    }
+}
+
+header .swiper-pagination-vertical.swiper-pagination-bullets::before {
+    content: "2";
+    color: white;
+    font-size: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -100%;
+}
+.header .swiper-pagination-bullet{
+   background-color: white;
+   opacity: 1;
+}
+
+.header .swiper-pagination-bullet-active{
+    background-color: green;
+}
+
+header .swiper img{
+    object-fit: none;
+}
+header nav {
+    z-index: 3;
+    height: 108px;
+    
+}
+header nav .logo {
+width: 39.5%;
+}
+
+
+header nav .login-leng {
+margin-left: 3%;
+margin-top: 1rem;
+display: flex;
+flex-direction: column;
+}
+
+@media (max-width : 767px) {
+    header nav  {
+       flex-direction: column;
+       justify-content: flex-start !important;
+    }
+
+    header nav .login-leng {
+        flex-direction: row-reverse;
+    }
+    header nav .logo {
+        width: 100%;
+    }
+}
+header nav .login-leng .reg a {
+    display: block;
+    margin-right: 26px;
+}
+
+header nav .login-leng .leng {
+    width: 56px;
+    height: 23px;
+    margin-right: auto;
+    padding: 0 6px 0 0;
+    border-radius: 4px;
+    border: solid 1px #fff;
+    margin-bottom: 20.6px;
+}
+header nav .login-leng .leng a{
+    display: block;
+    /* w */
+}
+
+
+header nav .login-leng .leng a:first-of-type {
+    width: 18px;
+    height: 19px;
+    margin: 2px 0 2px 3.3px;
+    font-family: HacenMaghrebBd;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
+    color: #fff;
+    /* border: ; */
+}
+
+header nav .login-leng .leng a:last-of-type {
+    width: 28.7px;
+    height: 24px;
+    margin: 0 3.3px 0 0;
+    padding: 2px 5.7px 2px 6px;
+    border: solid 1px var(--main-color);
+    background-color: var(--main-color);
+    transform: translateY(-1px)
+}
+
+header .show-menue {
+    width: 70px;
+    height: 100%;
+    z-index: 5;
+    cursor: pointer;
+    background-color: rgb(35 31 32 / 30%);
+
+}
+header  .show-menue span {
+    margin: 6.5px 0 0;
+    color: var(--secend-color);
+    
+}
+
+header .menue {
+    width: 70px;
+    height: calc(100vh - 108px);
+    background-color: rgb(35 31 32 / 30%);
+    z-index: 4;
+    top: 108px;
+   
+}
+header .menue a {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+header .menue a:first-of-type {
+    margin-top: 12.8vh;
+}
+header .menue a:nth-of-type(2) {
+    margin-top: 21.5vh;
+}
+
+header .menue a:not(:first-of-type , :nth-of-type(2)) {
+    margin-top: 2.7vh;
+}
+header .menue a:last-of-type {
+    margin-top: 9.2vh;
+}
+
+
+header .header-title ,  header .text-header {
+    z-index: 7;
+    right: 13vw;
+}
+header .header-title  {
+    font-size: 50px;
+    max-width: 35.5vw;
+    margin: 95.4px 0 24.1px 540px;
+    top: 5.3vh;
+
+}
+
+header .text-header  {
+    font-size: 18px;
+    color: var(--gray-color);
+    margin: 40.1px 0 7.5px 621px;
+    max-width: 29vw;
+    top: 37.3vh;
+}
+
+
+header .showmore {
+    z-index: 7;
+    right: 13vw;
+    top: 5.3vh;
+    position: relative;
+    color: white;
+    background-color: transparent;
+}
+
+header .colors {
+    z-index: 7;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    top:54.3vh;
+
+}
+
+@media (min-width : 1300px) {
+    header .colors {
+        /* bottom: -6vh; */
+    }
+}
+
+
+
+header .all-colors {
+    width: 60%;
+}
+
+
+
+
+@media (max-width : 767px) {
+    header .header-title {
+        font-size: 29px;
+        max-width: 75vw;
+        width: 100vw;
+        margin: 0;
+        top: 50%;
+        transform: translate(-10% , -50%);
+        left: 50%;
+    
+    }
+
+    header nav {
+        /* align-items: c; */
+    }
+
+    .header .text-header {
+        font-size: 14px;
+        max-width: 77vw;
+        width: 100vw;
+        margin: 0;
+        top: 62%;
+        transform: translate(-10% , -50%);
+        left: 50%;
+    }
+
+    header nav .login-leng {
+        align-items: center;
+
+    }
+    header nav .login-leng .leng  {
+        margin: 1rem;
+    }
+    header .colors  {
+        top: 64vh;
+        flex-direction: column;
+    }
+}
+
+.mySwiper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35 31 32 / 70%);
+    z-index: 2;
+}
+/* End Header */
