@@ -258,7 +258,7 @@ header .colors {
 
 }
 
-@media (max-width : 1300px) {
+@media (max-width : 767px) {
     header .colors {
        right : 10% ;
     }
