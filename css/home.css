@@ -258,9 +258,9 @@ header .colors {
 
 }
 
-@media (min-width : 1300px) {
+@media (max-width : 1300px) {
     header .colors {
-        /* bottom: -6vh; */
+       right : 10% ;
     }
 }
 
