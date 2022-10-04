@@ -613,26 +613,12 @@ details[open] summary::marker {
     color: white;
 }
 
-/* #offcanvasExample .accordion * {
-    border: none !important;
-    outline: none !important;
+
+
+.subscipre {
+    border: 1px solid white;
 }
-#offcanvasExample .accordion-item:first-of-type .accordion-button{
-    background-color: var(--secend-color);
-    color: white;
-    padding-right: 2px;
-    padding-left: 2px;
-    border: none;
-    outline: none;
-    box-shadow: none;
+.subscipre:hover {
+    color: var(--main-color) !important;
+    background-color: white !important;
 }
-#offcanvasExample .accordion-item .accordion-body{
-    background-color: var(--secend-color);
-    color: white;
-    padding-right: 2px;
-    padding-left: 2px;
-    border: none;
-    outline: none;
-    box-shadow: none;
-} */
-/* End offcanvasExample */
