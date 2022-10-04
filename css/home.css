@@ -11,6 +11,10 @@
     margin: 0;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
 :root {
     --main-color : #0b6f32 ; 
     --secend-color : #231f20 ; 
@@ -24,6 +28,10 @@ ul {
 }
 .gray-color {
     color: var(--gray-color);
+}
+
+.red-color {
+    color: var(--red-color);
 }
 
   a {
@@ -40,6 +48,10 @@ ul {
 }
 .fs-18 {
     font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
 }
 
 
@@ -234,7 +246,7 @@ header .show-menue {
     /* height: 100%; */
     z-index: 5;
     cursor: pointer;
-    background-color: rgb(35 31 32 / 30%);
+    background-color: rgb(35 31 32 / 15%);
 
 }
 
@@ -475,3 +487,152 @@ footer .middle .row::before {
     bottom: 0;
 }
 /* End footer */
+
+/* start offcanvasExample */
+#offcanvasExample {
+    width: calc(100% - 85px);
+}
+#offcanvasExample2 {
+    width: calc(100% - 65px);
+    background-color: rgb(35 31 32 / 84%);
+}
+
+
+
+#offcanvasExample .offcanvas-body {
+    background-color: var(--secend-color);
+}
+ .offcanvas-body .footer-title-sec , 
+#offcanvasExample2 .offcanvas-body .footer-title-sec{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+
+ .offcanvas-body .row .col-2{
+    /* height: 100%; */
+    border-left:   0.2px solid rgb(82 82 82 / 19%)   ;
+    border-right:   0.2px solid rgb(82 82 82 / 19%)   ;
+    padding-top: 2rem;
+}
+ .offcanvas-body .row .col-2:first-of-type{
+    /* height: 100%; */
+    border-right: none  ;
+}
+ .offcanvas-body .row .col-2:last-of-type{
+    /* height: 100%; */
+    border-left:   none ; 
+
+}
+
+
+ .offcanvas-body .row .col-2:nth-of-type(2) {
+    background-color: black;
+}
+
+ .offcanvas-body ul li a{
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+ details {
+    color: white;
+    /* width: 85%; */
+    position: relative;
+
+}
+
+
+ summary {
+    position: relative;
+}
+
+ summary::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: 8px;
+    right: 0;
+    background-color: var(--red-color);
+}
+
+#offcanvasExample2 summary::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    bottom: 8px;
+    right: 0;
+    background-color: var(--red-color);
+}
+
+details summary::marker {
+    color: var(--red-color);
+}
+details[open] summary::marker {
+    color: white;
+}
+#offcanvasExample2 details summary::marker {
+    color: #f5f5f5
+    ;
+}
+
+#offcanvasExample2 summary {
+    width:40%;
+}
+#offcanvasExample2 details[open] summary::marker {
+    color: var(--red-color);
+}
+
+
+#offcanvasExample2 details[open] summary::after  {
+    width: 100%;
+}
+
+
+ summary.none::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: 8px;
+    right: 0;
+    background-color: var(--red-color);
+    display: none;
+}
+ details p{
+    display: inline-flex;
+    width: 84%;
+    white-space: nowrap;
+}
+
+ details p a{ 
+    color: white;
+}
+
+/* #offcanvasExample .accordion * {
+    border: none !important;
+    outline: none !important;
+}
+#offcanvasExample .accordion-item:first-of-type .accordion-button{
+    background-color: var(--secend-color);
+    color: white;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+#offcanvasExample .accordion-item .accordion-body{
+    background-color: var(--secend-color);
+    color: white;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+} */
+/* End offcanvasExample */
