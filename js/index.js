@@ -1,10 +1,13 @@
 // swiper
 let nav  = document.querySelector("header nav") ; 
 let swiperHeader = document.querySelector(".swiper.mySwiper") ; 
+let allSlides = Array.from(document.querySelectorAll(".swiper.mySwiper .swiper-slide")) ;
 let headerMenue = document.querySelector(".header .menue") ; 
 let logo = document.querySelector("nav .logo img")
 let showMenue = Array.from(document.querySelectorAll("nav .show-menue"))
 let allCanves = Array.from(document.querySelectorAll(".offcanvas")) ; 
+
+
 
 window.onload = () => {
   showMenue[0].style.height = `${logo.clientHeight}px` ;
@@ -25,7 +28,7 @@ window.onresize = () => {
 
 }
 
-var swiper = new Swiper(".mySwiper", {
+let swiper1 = new Swiper(".mySwiper", {
     direction: "vertical",
     loop : true ,
     autoplay: {
@@ -35,6 +38,66 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+  });
+
+  // swiper1.progress()	
+
+
+  allSlides.forEach(e=> {
+    // setInterval(() => {
+    //   if(e.classList.contains("swiper-slide-active")) {
+    //     console.log(e)
+        
+    //   }
+    // }, 5000);
+  })
+  let swiper2 = new Swiper(".mySwiper2", {
+    loop : true ,
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+
+    },
+  });
+
+
+  let swiper3 = new Swiper(".mySwiper3", {
+    loop : true ,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+
+    },
+  });
+
+
+  let swiper6 = new Swiper(".mySwiper4", {
+   loop : true ,
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      300: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+     
     },
   });
 // swiper
