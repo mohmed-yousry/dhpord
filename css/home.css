@@ -624,6 +624,11 @@ details[open] summary::marker {
  details p a{ 
     color: white;
 }
+ details p a:hover{ 
+    color: white;
+}
+
+
 
 
 
