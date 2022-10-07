@@ -41,7 +41,10 @@ let swiper1 = new Swiper(".mySwiper", {
 
   });
 
- 
+  // swiper1.progress()	
+
+
+
   let swiper2 = new Swiper(".mySwiper2", {
     loop : true ,
 
@@ -52,7 +55,7 @@ let swiper1 = new Swiper(".mySwiper", {
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 35,
       },
 
     },
@@ -64,11 +67,11 @@ let swiper1 = new Swiper(".mySwiper", {
     breakpoints: {
       640: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 70,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 35,
       },
 
     },
@@ -77,14 +80,15 @@ let swiper1 = new Swiper(".mySwiper", {
 
   let swiper6 = new Swiper(".mySwiper4", {
    loop : true ,
+   centeredSlides	: true ,
     breakpoints: {
       640: {
         slidesPerView: 3,
         spaceBetween: 20,
       },
-      300: {
-        slidesPerView: 2,
-        spaceBetween: 50,
+      400: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
      
     },
