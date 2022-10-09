@@ -1151,12 +1151,12 @@ font-size: 12px;
 
 
 .section5 {
-    margin-bottom: 258px;
+    margin-bottom: 142px;
 }
 
 @media (max-width : 767px) {
     .section5 {
-        margin-bottom: 116px;
+        margin-bottom: 55px;
     }
 }
 .section5 h1::after {
