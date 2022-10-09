@@ -5,15 +5,28 @@ let headerMenue = document.querySelector(".header .menue") ;
 let logo = document.querySelector("nav .logo img")
 let showMenue = Array.from(document.querySelectorAll("nav .show-menue"))
 let allCanves = Array.from(document.querySelectorAll(".offcanvas")) ; 
+let swiper1Pagention = document.querySelector(".swiper1-page") ; 
 window.onload = () => {
   showMenue[0].style.height = `${logo.clientHeight}px` ;
   showMenue[1].style.height = `${logo.clientHeight}px` ;
+  console.log(swiper1Pagention)
   allCanves[0].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
   allCanves[1].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
-  // console.log()
   swiperHeader.style.top = `-${nav.clientHeight}px`
   headerMenue.style.top = `${logo.clientHeight}px`
   headerMenue.style.height = `calc(100vh - ${logo.clientHeight}px)`
+  let p = document.createElement("p") ; 
+  p.className = "slideNumber"
+  p.innerHTML = swiper1.realIndex + 1 ; 
+  p.style.cssText = `
+    color: white;
+    font-size: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -100%;
+  `
+  swiper1Pagention.appendChild(p)
 }
 
 
@@ -28,7 +41,10 @@ window.onresize = () => {
 
 }
 
-let swiper1 = new Swiper(".mySwiper", {
+
+
+
+let swiper1 = new Swiper(".mySwiper", {  
     direction: "vertical",
     loop : true ,
     autoplay: {
@@ -40,9 +56,14 @@ let swiper1 = new Swiper(".mySwiper", {
       clickable: true,
     },
 
+
+    
   });
 
-  // swiper1.progress()	
+  swiper1.on('slideChange', function (tr) {
+    document.querySelector(".slideNumber").innerHTML = tr.realIndex + 1 ; 
+  });
+
 
 
 
