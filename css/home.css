@@ -179,15 +179,7 @@ ul {
     }
 }
 
- .swiper-pagination-vertical.swiper-pagination-bullets::before {
-    content: "2";
-    color: white;
-    font-size: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: -100%;
-}
+
  .swiper-pagination-bullet{
    background-color: white;
    opacity: 1;
