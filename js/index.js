@@ -1,17 +1,17 @@
 // swiper
 let nav  = document.querySelector("header nav") ; 
 let swiperHeader = document.querySelector(".swiper.mySwiper") ; 
+let allSlides = Array.from(document.querySelectorAll(".swiper.mySwiper .swiper-slide")) ;
 let headerMenue = document.querySelector(".header .menue") ; 
 let logo = document.querySelector("nav .logo img")
 let showMenue = Array.from(document.querySelectorAll("nav .show-menue"))
 let allCanves = Array.from(document.querySelectorAll(".offcanvas")) ; 
-
-
-
 window.onload = () => {
   showMenue[0].style.height = `${logo.clientHeight}px` ;
   showMenue[1].style.height = `${logo.clientHeight}px` ;
-
+  allCanves[0].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
+  allCanves[1].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
+  // console.log()
   swiperHeader.style.top = `-${nav.clientHeight}px`
   headerMenue.style.top = `${logo.clientHeight}px`
   headerMenue.style.height = `calc(100vh - ${logo.clientHeight}px)`
@@ -24,6 +24,8 @@ window.onresize = () => {
   headerMenue.style.height = `calc(100vh - ${logo.clientHeight}px)`
   showMenue[0].style.height = `${logo.clientHeight}px` ;
   showMenue[1].style.height = `${logo.clientHeight}px` ;
+  allCanves[0].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
+  allCanves[1].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
 
 }
 
@@ -44,7 +46,14 @@ let swiper1 = new Swiper(".mySwiper", {
   // swiper1.progress()	
 
 
-
+  allSlides.forEach(e=> {
+    // setInterval(() => {
+    //   if(e.classList.contains("swiper-slide-active")) {
+    //     console.log(e)
+        
+    //   }
+    // }, 5000);
+  })
   let swiper2 = new Swiper(".mySwiper2", {
     loop : true ,
 
@@ -55,7 +64,7 @@ let swiper1 = new Swiper(".mySwiper", {
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 35,
+        spaceBetween: 30,
       },
 
     },
@@ -67,11 +76,11 @@ let swiper1 = new Swiper(".mySwiper", {
     breakpoints: {
       640: {
         slidesPerView: 1,
-        spaceBetween: 70,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 35,
+        spaceBetween: 30,
       },
 
     },
@@ -80,15 +89,14 @@ let swiper1 = new Swiper(".mySwiper", {
 
   let swiper6 = new Swiper(".mySwiper4", {
    loop : true ,
-   centeredSlides	: true ,
     breakpoints: {
       640: {
         slidesPerView: 3,
         spaceBetween: 20,
       },
-      400: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+      300: {
+        slidesPerView: 2,
+        spaceBetween: 50,
       },
      
     },
@@ -138,3 +146,40 @@ showMenue.forEach(e=> {
 })
 
 
+// handle swiper4
+let allSliderOverlay = Array.from(document.querySelectorAll(".section4 .overlay-slider .slide")) ; 
+let largImg = document.querySelector(".section4 .content .imges img") ; 
+let mainTitleOverlay = document.querySelector(".section4 .content .overlay1 .title1") ;
+// console.log(mainTitleOverlay.parentElement.children[4].href) 
+
+allSliderOverlay.forEach(( e , i) => {
+  if(window.innerWidth > 768) {
+    if(i == 0) {
+      e.style.right = `${(i * 360) + 118}px` ;
+      // return false ;
+    } else {
+      e.style.right = `${(i * 360) + 118}px` ;
+      
+    }
+  } else {
+    if(i == 0) {
+      e.style.right = `${(i * 360) + 16}px` ;
+      // return false ;
+    } else {
+      e.style.right = `${(i * 360) - 16}px` ;
+      
+    }
+  }
+
+  e.addEventListener("click" , () => {
+    largImg.src = e.children[1].children[0].src ;
+    mainTitleOverlay.innerHTML = e.children[0].children[0].innerHTML ;
+    mainTitleOverlay.parentElement.children[2] = e.children[0].children[1].children[1].innerHTML ;
+    mainTitleOverlay.parentElement.children[3] = e.children[0].children[2].children[1].innerHTML ;
+    // console.log(e.children[0].children[1].children[1].innerHTML)
+    // console.log(e.children[0].children[2].children[1].innerHTML)
+    e.children[0].children[3].href = mainTitleOverlay.parentElement.children[4].href ;
+    // console.log(e.children[0].children[3].href)
+  })
+})
+// handle swiper4
