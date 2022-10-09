@@ -1050,7 +1050,7 @@ font-size: 12px;
 }
 
 .section4 .overlay-slider:hover::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+/*     background-color: var(--main-color); */
 }
 
 
