@@ -1,7 +1,6 @@
 // swiper
 let nav  = document.querySelector("header nav") ; 
 let swiperHeader = document.querySelector(".swiper.mySwiper") ; 
-let allSlides = Array.from(document.querySelectorAll(".swiper.mySwiper .swiper-slide")) ;
 let headerMenue = document.querySelector(".header .menue") ; 
 let logo = document.querySelector("nav .logo img")
 let showMenue = Array.from(document.querySelectorAll("nav .show-menue"))
@@ -46,14 +45,7 @@ let swiper1 = new Swiper(".mySwiper", {
   // swiper1.progress()	
 
 
-  allSlides.forEach(e=> {
-    // setInterval(() => {
-    //   if(e.classList.contains("swiper-slide-active")) {
-    //     console.log(e)
-        
-    //   }
-    // }, 5000);
-  })
+
   let swiper2 = new Swiper(".mySwiper2", {
     loop : true ,
 
