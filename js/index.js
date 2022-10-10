@@ -98,8 +98,8 @@ let swiper1 = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween : 35
       },
-     300: {
-        slidesPerView: 1,
+     400: {
+        slidesPerView: 3,
         spaceBetween : 35
       },
      
