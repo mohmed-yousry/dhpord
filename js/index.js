@@ -84,7 +84,7 @@ let swiper1 = new Swiper(".mySwiper", {
 
 
   var swiper85 = new Swiper(".mySwiper85", {
-    // loop : true ,
+    loop : true ,
     breakpoints: {
       1300: {
         slidesPerView: 4,
