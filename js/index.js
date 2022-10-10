@@ -38,7 +38,6 @@ window.onresize = () => {
   showMenue[1].style.height = `${logo.clientHeight}px` ;
   allCanves[0].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
   allCanves[1].style.width = `calc(100% - ${headerMenue.clientWidth}px)`
-
 }
 
 
@@ -84,6 +83,29 @@ let swiper1 = new Swiper(".mySwiper", {
   });
 
 
+  var swiper85 = new Swiper(".mySwiper85", {
+    // loop : true ,
+    breakpoints: {
+      1300: {
+        slidesPerView: 4,
+        spaceBetween : 35
+      },
+      700: {
+        slidesPerView: 4,
+        spaceBetween : 35
+      },
+      500: {
+        slidesPerView: 3,
+      },
+     
+    },
+  });
+
+
+
+
+
+  
   let swiper3 = new Swiper(".mySwiper3", {
     loop : true ,
     breakpoints: {
@@ -108,7 +130,7 @@ let swiper1 = new Swiper(".mySwiper", {
         spaceBetween: 20,
       },
       300: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 50,
       },
      
@@ -163,36 +185,32 @@ showMenue.forEach(e=> {
 let allSliderOverlay = Array.from(document.querySelectorAll(".section4 .overlay-slider .slide")) ; 
 let largImg = document.querySelector(".section4 .content .imges img") ; 
 let mainTitleOverlay = document.querySelector(".section4 .content .overlay1 .title1") ;
-// console.log(mainTitleOverlay.parentElement.children[4].href) 
 
 allSliderOverlay.forEach(( e , i) => {
-  if(window.innerWidth > 768) {
-    if(i == 0) {
-      e.style.right = `${(i * 360) + 118}px` ;
-      // return false ;
+    if(window.innerWidth > 768) {
+      if(i == 0) {
+        e.style.right = `${(i * 360) + 118}px` ;
+      } else {
+        e.style.right = `${(i * 360) + 118}px` ;
+        
+      }
     } else {
-      e.style.right = `${(i * 360) + 118}px` ;
-      
+      if(i == 0) {
+        e.style.right = `${(i * 360) + 16}px` ;
+      } else {
+        e.style.right = `${(i * 360) - 16}px` ;
+        
+      }
     }
-  } else {
-    if(i == 0) {
-      e.style.right = `${(i * 360) + 16}px` ;
-      // return false ;
-    } else {
-      e.style.right = `${(i * 360) - 16}px` ;
-      
-    }
-  }
+  
 
   e.addEventListener("click" , () => {
     largImg.src = e.children[1].children[0].src ;
+
     mainTitleOverlay.innerHTML = e.children[0].children[0].innerHTML ;
     mainTitleOverlay.parentElement.children[2] = e.children[0].children[1].children[1].innerHTML ;
     mainTitleOverlay.parentElement.children[3] = e.children[0].children[2].children[1].innerHTML ;
-    // console.log(e.children[0].children[1].children[1].innerHTML)
-    // console.log(e.children[0].children[2].children[1].innerHTML)
     e.children[0].children[3].href = mainTitleOverlay.parentElement.children[4].href ;
-    // console.log(e.children[0].children[3].href)
   })
 })
 // handle swiper4
