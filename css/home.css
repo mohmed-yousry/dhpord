@@ -123,7 +123,7 @@ ul {
 }
 
 .swiper .swiper-slide img {
-    object-fit: inherit;
+    object-fit:inherit ;
 }
 
 .swiper .swiper-slide .content h1{
@@ -317,17 +317,22 @@ header .menue a {
     width: fit-content;
 }
 header .menue a:first-of-type {
-    margin-top: 8vh;
-}
-header .menue a:nth-of-type(2) {
-    margin-top: 10vh;
+    display: flex;
+    height: 46.3%;
+    align-items: center;
 }
 
+
 header .menue a:not(:first-of-type , :nth-of-type(2)) {
-    margin-top: 2.7vh;
+    display: flex;
+    height: 6%;
+    align-items: center;
+    /* margin-top: 2.7vh; */
 }
 header .menue a:last-of-type {
-    margin-top: 9.2vh;
+   height: 21%;
+   display: flex;
+   align-items: center;
 }
 
 header .header-title ,  header .text-header {
