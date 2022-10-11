@@ -97,6 +97,8 @@ ul {
     padding: 5px 12px 7px 14.3px;
     border-radius: 4px;
     border: solid 1px #a3a3a3;
+display: flex ;
+align-items: center;
 }
 @media (max-width : 767px) {
     .button {
