@@ -101,9 +101,12 @@ ul {
 @media (max-width : 767px) {
     .button {
         width: 95px;
-        height: 20px;
+        height: 25px;
         font-size: 12px;
     }
+.button {
+width: 20px ;
+}
 }
 .header {
     /* min-height: 100vh; */
