@@ -106,9 +106,6 @@ align-items: center ;
         height: 25px;
         font-size: 12px;
     }
-.button svg {
-width: 20px ;
-}
 }
 .header {
     /* min-height: 100vh; */
