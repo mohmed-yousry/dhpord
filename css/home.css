@@ -19,6 +19,7 @@
 
   h1 , h2 , h3 , h4 , h5 , h6  {
     font-family: BahijTheSansArabic;
+    font-weight: 100 !important;
   }
   body {
     overflow-x: hidden;
@@ -100,6 +101,8 @@ ul {
 @media (max-width : 767px) {
     .button {
         width: 95px;
+        height: 20px;
+        font-size: 12px;
     }
 }
 .header {
@@ -176,7 +179,7 @@ ul {
         max-width: 77%;
         padding: 0px !important;
         right: 17.5%;
-        top: 30%;
+        top: 32%;
     }
 }
 
@@ -863,6 +866,8 @@ section h1::after {
     .section2 h1::after {
         width: 45px;
     }
+
+  
 }
 
 .section2 a {
@@ -882,6 +887,14 @@ section h1::after {
     .section2 a {
         display: flex;
         align-items: center;
+    }
+
+    .section2 img {
+        min-height: 250px;
+    }
+
+    .section2 p {
+        overflow: auto;
     }
 }
 
@@ -992,10 +1005,16 @@ section h1::after {
     }
 
     .section3 img {
-        min-height: 580px;
+        min-height: 350px;
         
     }
 
+
+    .section3 .overlay-setion .content {
+        height: 150px;
+        overflow: auto;
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -1064,7 +1083,7 @@ section h1::after {
         margin-bottom: 81px;
     } 
     .section4 .content {
-        min-height: 750px;
+        min-height: 500px;
     }
 }
 
@@ -1306,6 +1325,7 @@ font-size: 12px;
 
     .section5 p{
         font-size: 10px;
+        overflow: auto;
     }
 
     .section5 a{
@@ -1330,7 +1350,7 @@ font-size: 12px;
         -moz-border-radius: 0px  0px  0px 50px;
         -ms-border-radius: 0px  0px  0px 50px;
         -o-border-radius: 0px  0px  0px 50px;
-        min-height: 338px;
+        min-height: 250px;
 }
 }
 /* End section5 */
@@ -1691,6 +1711,7 @@ font-size: 12px;
 
 
 /* totop start*/
+
 .toTop {
     width: 36px;
     height: 36px;
@@ -1705,6 +1726,7 @@ font-size: 12px;
     justify-content: center;
     display: none;
 }
+
 
 
 /* totop  End*/
