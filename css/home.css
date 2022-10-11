@@ -316,23 +316,33 @@ header .menue a {
     margin-left: auto;
     width: fit-content;
 }
-header .menue a:first-of-type {
+header .menue div:first-of-type {
     display: flex;
-    height: 46.3%;
+    height: 25.3%;
     align-items: center;
 }
 
+header .menue .middle {
+    height: 50%;
 
-header .menue a:not(:first-of-type , :nth-of-type(2)) {
-    display: flex;
-    height: 6%;
-    align-items: center;
-    /* margin-top: 2.7vh; */
 }
-header .menue a:last-of-type {
-   height: 21%;
-   display: flex;
-   align-items: center;
+header .menue .middle div{
+    height: 50%;
+}
+
+header .menue .middle div {
+    height: calc(100% / 6);
+    display: flex;
+    align-items: center;
+}
+
+header .menue .middle div:not(:first-of-type) {
+    align-items: center;
+}
+header .menue div:not(.middle div):last-of-type {
+    height: 25%;
+    display: flex;
+    align-items: center;
 }
 
 header .header-title ,  header .text-header {
@@ -472,6 +482,8 @@ footer {
     background-color: var(--main-color);
 }
 
+
+
 @media (max-width : 767px) {
     footer .footer-main-title {
         font-size: 16px;
@@ -504,7 +516,7 @@ footer .middle .row::after ,footer .middle .row::before{
     content: "";
     position: absolute;
     background-color: #0d9642;
-    height: 76%;
+    height: 89%;
     width: 1px;
     top: 6%;
 }
@@ -526,6 +538,9 @@ footer .middle .row::before {
     left: 0;
 }
 
+footer .address {
+    margin-top: 1rem;
+}
 
 
 .footer-title-sec::after {
@@ -691,6 +706,7 @@ section .overlay-setion {
     opacity: 85%;
     padding: 2.6rem;
     overflow: hidden;
+    
 }
 
 @media (max-width : 767px) {
@@ -735,6 +751,7 @@ section h1::after {
     margin-bottom: 178px;
 }
 
+
 @media (max-width : 767px) {
     .section2 {
         margin-bottom: 68px;
@@ -756,6 +773,8 @@ section h1::after {
     -moz-transform: translate(20px , -20px);
     -ms-transform: translate(20px , -20px);
     -o-transform: translate(20px , -20px);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -763,13 +782,14 @@ section h1::after {
 @media (max-width : 1200px) {
     .section2 .overlay-setion {
         width: 50%;
-        padding: 57px 75px 0 0;
+        padding: 57px 75px 57px 0;
     }
 }
 @media (max-width : 991px) {
     .section2 .overlay-setion {
         width: 50%;
         border-radius: 0px 50px 0px 0px;
+       
     }
     .section2 img{
         border-radius: 0px 50px 0px 0px;
@@ -788,9 +808,9 @@ section h1::after {
 
 @media (max-width : 767px) {
     .section2 .overlay-setion {
-        width: 60%;
+        width: 42%;
         background-size: 135px 135px;
-        padding: 39px 16px 0px 0;
+        padding: 39px 16px 39px 0;
         transform: translate(10px , -10px);
         -webkit-transform: translate(10px , -10px);
         -moz-transform: translate(10px , -10px);
@@ -802,24 +822,19 @@ section h1::after {
         font-size: 22px;
     } */
 
-   
-
-    .section2 a{
-        margin-top: 120px;
-        display: flex;
-        align-items: center;
-    }
-
     .section2 h1::after {
         width: 45px;
     }
 }
 
+.section2 a {
+    margin-top: auto;
+}
 .section2 img {
     border-radius: 0px 120px 0px 0px;
-    /* min-height: 400px; */
-    min-height: 275px;
-    aspect-ratio: 2/1;
+    min-height: 400px;
+    /* min-height: 275px; */
+    /* aspect-ratio: 2/1; */
 }
 
 @media (max-width : 767px) {
@@ -827,7 +842,8 @@ section h1::after {
         border-radius: 0px 50px 0px 0px;
     }
     .section2 a {
-        margin-top: 30px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -1547,8 +1563,12 @@ font-size: 12px;
 
 
 /* start section 8 */
+.section8 {
+    margin-bottom: 98px;
+}
 .section8 h1 {
     font-size: 16px;
+    
 }
 
 .section8 h3 {
@@ -1630,3 +1650,23 @@ font-size: 12px;
 }
 
 /* End section 8 */
+
+
+/* totop start*/
+.toTop {
+    width: 36px;
+    height: 36px;
+    background-color: var(--red-color);
+    position: fixed;
+    top: 91% ;
+    right: 2%;
+    z-index: 1234578;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+/* totop  End*/
