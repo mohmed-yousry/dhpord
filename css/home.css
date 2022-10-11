@@ -5,7 +5,7 @@
   }
 @font-face {
     font-family: BahijTheSansArabic;
-    src: url(../font/ArbFONTS-Bahij_TheSansArabic-Plain.ttf);
+    src: url(../font/Bahij_TheSansArabic-Black.ttf);
   }
 
 
@@ -496,8 +496,6 @@ footer {
     footer .footer-main-title {
         font-size: 16px;
     }
-
-   
 }
 .footer-title-sec {
     position: relative;
@@ -550,6 +548,19 @@ footer .middle .row::after ,footer .middle .row::before{
    footer ul li a {
     font-size: 14px;
 }
+}
+
+@media (min-width : 1200px) {
+    footer .first *{
+        max-width: 88%;
+    }
+
+    footer .first  .form{
+        max-width: 95%;
+    }
+    footer .first   form{
+        max-width: 100%;
+    }
 }
 footer .middle .row::after {
     right: 0;
