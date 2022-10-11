@@ -4,8 +4,8 @@
     src: url(../font/HacenMaghrebBdRegular.ttf);
   }
 @font-face {
-    font-family: BahijTheSansArabic-Black;
-    src: url(../font/Bahij_TheSansArabic-Black.ttf);
+    font-family: BahijTheSansArabic;
+    src: url(../font/ArbFONTS-Bahij_TheSansArabic-Plain.ttf);
   }
 
 
@@ -751,6 +751,12 @@ section h1 {
     color: white;
     position: relative;
     margin-bottom: 2.5rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
 }
 
 section img {
@@ -765,6 +771,7 @@ section h1::after {
     /* width: ; */
     height: 2px;
     background-color: #bf202f;
+
 }
 
 .section2 {
