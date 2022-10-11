@@ -8,7 +8,7 @@
     src: url(../font/Bahij_TheSansArabic-Black.ttf);
   }
 
-  
+
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -17,11 +17,9 @@
     margin: 0;
   }
 
-
-h1 , h2 , h3 , h4 , h5 , h6  {
-    font-family: BahijTheSansArabic-Black;
+  h1 , h2 , h3 , h4 , h5 , h6  {
+    font-family: BahijTheSansArabic;
   }
-
   body {
     overflow-x: hidden;
   }
@@ -118,7 +116,7 @@ ul {
 
 .swiper .swiper-slide .content{
    right: 13%;
-   max-width: 40%;
+   max-width: 34%;
    top: 20%;
    z-index: 3;
    padding: 0 !important;
@@ -130,13 +128,19 @@ ul {
 }
 
 .swiper .swiper-slide .content h1{
+    font-family: BahijTheSansArabic;
     font-size: 50px;
-    font-family: BahijTheSansArabic-Black;
-}
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: right;
+    
+    }
 .swiper .swiper-slide .content p{
     font-size: 18px;
     color: var(--gray-color);
-    font-family: HacenMaghrebBd-Regular;
     
 }
 
@@ -319,33 +323,34 @@ header .menue a {
     margin-left: auto;
     width: fit-content;
 }
-header .menue div:first-of-type {
+header .menue div:not(.middle div):first-of-type {
     display: flex;
     height: 25.3%;
     align-items: center;
 }
 
 header .menue .middle {
-    height: 50%;
-
+    /* height: 50%; */
+    margin-top: 150% !important;
 }
 header .menue .middle div{
-    height: 50%;
+    /* height: 50%; */
 }
 
 header .menue .middle div {
-    height: calc(100% / 6);
+    margin-bottom: 20%;
+    /* height: calc(100% / 6); */
     display: flex;
     align-items: center;
 }
 
 header .menue .middle div:not(:first-of-type) {
-    align-items: center;
+    /* align-items: center; */
 }
 header .menue div:not(.middle div):last-of-type {
-    height: 25%;
+    height: 16.7%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 header .header-title ,  header .text-header {
