@@ -389,22 +389,20 @@ header .showmore {
 }
 
 @media (max-width : 767px) {
-    .swiper-slide .showmore  {
-        /* margin-top: 5rem !important; */
+   .mySwiper .swiper-slide .showmore  {
+        margin-top: 5rem !important;
     }
 }
 
 @media (max-width : 400px) {
-    .swiper-slide .showmore  {
-        /* margin-top: 8rem !important; */
+  .mySwiper  .swiper-slide .showmore  {
+        margin-top: 8rem !important;
     }
 }
 
 .swiper-slide .colors {
     z-index: 4;
     right: 13%;
-    /* bottom: 0; */
-    /* position: relative; */
     top:75%;
     color: white;
 
