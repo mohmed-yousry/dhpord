@@ -93,17 +93,17 @@ ul {
 .button {
     width: 114px;
     height: 36px;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     padding: 5px 12px 7px 14.3px;
     border-radius: 4px;
     border: solid 1px #a3a3a3;
-display:flex ; 
-align-items: center ;
+    display: flex;
+    align-items: center;
 }
 @media (max-width : 767px) {
     .button {
         width: 95px;
-        height: 25px;
+        height: 20px;
         font-size: 12px;
     }
 }
@@ -117,9 +117,6 @@ align-items: center ;
     height: 100vh;
     top: -84px;
 }
-
-
-
 
 
 .swiper .swiper-slide .content{
@@ -393,13 +390,13 @@ header .showmore {
 
 @media (max-width : 767px) {
     .swiper-slide .showmore  {
-        margin-top: 5rem !important;
+        /* margin-top: 5rem !important; */
     }
 }
 
 @media (max-width : 400px) {
     .swiper-slide .showmore  {
-        margin-top: 8rem !important;
+        /* margin-top: 8rem !important; */
     }
 }
 
@@ -1016,14 +1013,12 @@ section h1::after {
 
 
     .section3 .overlay-setion .content {
-        height: 150px;
+        height: 130px;
         overflow: auto;
         margin-bottom: 20px;
     }
 
 }
-
-
 
 .section3 .nav-tabs {
     border-color: #696969;
@@ -1036,7 +1031,6 @@ section h1::after {
     width: calc(100% / 4);
     padding-right: 0px !important;
     padding-left: 0px !important;
-    /* border-bottom: 1px solid red; */
 }
 .section3 .nav-tabs  li button{
     color: #696969;
@@ -1088,7 +1082,7 @@ section h1::after {
         margin-bottom: 81px;
     } 
     .section4 .content {
-        min-height: 540px;
+        min-height: 500px;
     }
 }
 
